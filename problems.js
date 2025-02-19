@@ -9,9 +9,6 @@ function calculateVAT(price) {
     }
 }
 
-// const price = calculateVAT('foo');
-// console.log(price);
-
 
 
 
@@ -20,7 +17,6 @@ function validContact(contact) {
         const len = contact.length;
         const first = contact[0];
         const second = contact[1];
-        // console.log(len,first,second)
         if (len !== 11 || first !== '0' || second !== '1' || contact.includes(' ') === true) {
             return false;
         }
@@ -33,8 +29,6 @@ function validContact(contact) {
     }
 }
 
-const price = vali('foo');
-console.log(price);
 
 
 
@@ -73,7 +67,6 @@ function validProposal(person1, person2) {
     const arr1 = Array.isArray(person1);
     const arr2 = Array.isArray(person2);
     const ageDiff = Math.abs(person1.age - person2.age);
-    // console.log(ageDiff);
     if (typeof person1 !== 'object' || typeof person2 !== 'object' || arr1 === true || arr2 === true) {
         return 'Invalid';
     }
@@ -92,10 +85,7 @@ function validProposal(person1, person2) {
     }
 }
 
-// const person1 = { name: "toya", gender: "female", age: 35 };
-// const person2 = { name: "kader", gender: "male", age: 28 };
-// const per = validProposal(person1, person2);
-// console.log(per);
+
 
 
 function calculateSleepTime(times) {
@@ -115,14 +105,10 @@ function calculateSleepTime(times) {
         }
         const hour = sec / 3600;
         const objHour = parseInt(hour);
-        // console.log(hour);
         const remainingHourSec = hour - objHour;
-        // console.log(remainingHourSec);
         const min = remainingHourSec * 60;
-        // console.log(min);
         let objMin = parseInt(min);
         const remainingMinSec = min - objMin;
-        // console.log(remainingMinSec);
         let objSec = Math.round(remainingMinSec * 60);
         if (objSec === 60){
             objMin++;
@@ -137,6 +123,6 @@ function calculateSleepTime(times) {
     }
 }
 
-// const times = [1000, 499, 519, 300];
-// const per = calculateSleepTime(times);
-// console.log(per);
+const times = [100, 3800, "90" ];
+const per = calculateSleepTime(times);
+console.log(per);

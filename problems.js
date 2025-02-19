@@ -29,6 +29,12 @@ function validContact(contact) {
     }
 }
 
+const times = '01788aasasg';
+const per = validContact(times);
+console.log(per);
+
+
+
 
 
 
@@ -123,6 +129,6 @@ function calculateSleepTime(times) {
     }
 }
 
-const times = [100, 3800, "90" ];
-const per = calculateSleepTime(times);
-console.log(per);
+// const times = [100, 3800, "90" ];
+// const per = calculateSleepTime(times);
+// console.log(per);
